@@ -47,13 +47,9 @@ collections:
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
           - {label: Mid_banner, name: mid_banner, widget: image}
-          - {label: Featured_experts, name: featured_experts, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Experts, name: experts, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Recent_bookings, name: recent_bookings, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Bookings, name: bookings, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
-          - {label: Current_topics, name: current_topics, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Topics, name: topics, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Low_banner, name: low_banner, widget: image}
           - {label: Basic_info, name: basic_info, widget: string}
           - {label: Basic_description, name: basic_description, widget: string}
-          - {label: Work_process, name: work_process, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Works, name: works, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
       - file: "src/pages/about/index.md"
         label: "About"

@@ -22,9 +22,6 @@ export const HomePageTemplate = ({
   heading,
   description,
   midBanner,
-  featuredExperts,
-  recentBookings,
-  currentTopics,
   lowBanner,
   basicInfo,
   basicDescription,
@@ -143,18 +140,6 @@ HomePageTemplate.propTypes = {
   heading: PropTypes.string,
   description: PropTypes.string,
   midBanner: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  featuredExperts: PropTypes.shape({
-    heading: PropTypes.string,
-    experts: PropTypes.array,
-  }),
-  recentBookings: PropTypes.shape({
-    heading: PropTypes.string,
-    bookings: PropTypes.array,
-  }),
-  currentTopics: PropTypes.shape({
-    heading: PropTypes.string,
-    topics: PropTypes.array,
-  }),
   lowBanner: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   basicInfo: PropTypes.string,
   basicDescription: PropTypes.string,
@@ -177,13 +162,9 @@ const HomePage = ({ data }) => {
         heading={home.heading}
         description={home.description}
         midBanner={home.mid_banner}
-        featuredExperts={home.featured_experts}
-        recentBookings={home.recent_bookings}
-        currentTopics={home.current_topics}
         lowBanner={home.low_banner}
         basicInfo={home.basic_info}
         basicDescription={home.basic_description}
-        workProcess={home.work_process}
         testimonials={home.testimonials}
         scrollHere="scrollhere"
       />
@@ -220,46 +201,6 @@ export const HomePageQuery = graphql`
                 }
               }
             }
-            featured_experts {
-              experts {
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 240, quality: 64) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                text
-              }
-              heading
-              description
-            }
-            recent_bookings {
-              bookings {
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 240, quality: 64) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                text
-              }
-              heading
-            }
-            current_topics {
-              topics {
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 240, quality: 64) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                text
-              }
-              heading
-            }
             low_banner {
               childImageSharp {
                 fluid(maxWidth: 2048, quality: 100) {
@@ -269,19 +210,6 @@ export const HomePageQuery = graphql`
             }
             basic_info
             basic_description
-            work_process {
-              works {
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 240, quality: 64) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                text
-              }
-              heading
-            }
             testimonials {
               author
               quote
