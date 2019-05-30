@@ -6,5 +6,7 @@ heading_two: Email
 description_two: Mail@Globelynx.com
 heading_three: 24/7 Support
 description_three: 24/7 support team +44 (0)20 7963 7174
+address: 37 North Wharf Road, London W2 1AF
+address_image: /img/camerapage3.png
 ---
 

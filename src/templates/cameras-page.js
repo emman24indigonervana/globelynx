@@ -49,7 +49,7 @@ Port a cam G2
 </a> */}
             {/*<a href="/camerasDetails/Cameras-sony-camera">Office cam G2 ></a>*/}
             <div className="camera-animation">
-              <div className="camera-animation-camera left" />
+              <div className="camera-animation-camera left"  />
               <div className="camera-animation-camera right" />
             </div>
           </div>
@@ -64,7 +64,7 @@ Port a cam G2
             <p>
              {description_two}
             </p>
-						{image_two ?  <Img fixed={image_two.childImageSharp.fixed} /> : <img src={image_two} style={{width:'500px'}} />} 
+						{image_two.childImageSharp ?  <Img fixed={image_two.childImageSharp.fixed} /> : <img src={image_two} style={{width:'500px'}} />} 
           </div>
         </div>
       </div>
@@ -77,7 +77,7 @@ Port a cam G2
             <p>
               {description_three}
             </p>
-						{image_three ?  <Img fixed={image_three.childImageSharp.fixed} /> : <img src={image_three} style={{width:'500px'}} />} 
+						{image_three.childImageSharp ?  <Img fixed={image_three.childImageSharp.fixed} /> : <img src={image_three} style={{width:'500px'}} />} 
             {/* <Img fixed={cam2.childImageSharp.fixed} /> */}
             {/*<img alt={cam2} src={cam2} />*/}
           </div>
@@ -92,7 +92,7 @@ Port a cam G2
             <p>
 							{description_four}
             </p>
-						{image_four ?  <Img fixed={image_four.childImageSharp.fixed} /> : <img src={image_four} style={{width:'500px'}} />} 
+						{image_four.childImageSharp ?  <Img fixed={image_four.childImageSharp.fixed} /> : <img src={image_four} style={{width:'500px'}} />} 
             {/* <Img fixed={cam3.childImageSharp.fixed} /> */}
             {/*<img alt={cam3} src={cam3} />*/}
           </div>

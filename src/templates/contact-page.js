@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { graphql, Link } from 'gatsby'
 import { navigate } from 'gatsby-link'
+import Img from 'gatsby-image'
 
 import Layout from '../components/Layout'
 
@@ -179,13 +180,13 @@ export class ContactPageTemplate extends React.Component {
             </div>
             <div className="six columns has-padding">
               <h1>Location</h1>
-              <p>37 North Wharf Road, London W2 1AF</p>
+              <p>{this.props.address}</p>
               <a
                 href="https://www.google.co.uk/maps/place/London+SW1V+1AE/@51.4951753,-0.1413923,17z/data=!3m1!4b1!4m2!3m1!1s0x487605200cfb49b1:0xf39f996cfaea3bd5"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <img src={contactmap} alt={contactmap} />
+							{this.props.address_image.childImageSharp ?  <Img fixed={this.props.address_image.childImageSharp.fixed} /> : <img src={this.props.address_image} style={{width:'500px'}} />} 
               </a>
             </div>
           </div>
@@ -201,7 +202,9 @@ ContactPageTemplate.propTypes = {
   heading_two: PropTypes.string,
   description_two: PropTypes.string,
   heading_three: PropTypes.string,
-  description_three: PropTypes.string,
+	description_three: PropTypes.string,
+	address: PropTypes.string,
+	address_image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 export default class ContactPage extends React.Component {
@@ -216,7 +219,9 @@ export default class ContactPage extends React.Component {
           heading_two={contact.frontmatter.heading_two}
           description_two={contact.frontmatter.description_two}
           heading_three={contact.frontmatter.heading_three}
-          description_three={contact.frontmatter.description_three}
+					description_three={contact.frontmatter.description_three}
+					address={contact.frontmatter.address}
+					address_image={contact.frontmatter.address_image}
         />
       </Layout>
     )
@@ -239,7 +244,15 @@ export const pageQuery = graphql`
         heading_two
         description_two
         heading_three
-        description_three
+				description_three
+				address
+				address_image {
+					childImageSharp {
+					  fixed(width: 500) {
+							...GatsbyImageSharpFixed
+						}
+					}
+				}
       }
     }
   }

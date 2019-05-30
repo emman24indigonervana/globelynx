@@ -113,3 +113,5 @@ collections:
           - {label: Description_two, name: description_two, widget: string}
           - {label: Heading_three, name: heading_three, widget: string}
           - {label: Description_three, name: description_three, widget: string}
+          - {label: Address, name: address, widget: string}
+          - {label: Address_image, name: address_image, widget: image}

@@ -13,7 +13,9 @@ const ContactPagePreview = ({ entry, widgetFor }) => {
       heading_two={entry.getIn(['data', 'heading_two'])}
       description_two={entry.getIn(['data', 'description_two'])}
       heading_three={entry.getIn(['data', 'heading_three'])}
-      description_three={entry.getIn(['data', 'description_three'])}
+			description_three={entry.getIn(['data', 'description_three'])}
+			address={entry.getIn(['data', 'address'])}
+			address_image={entry.getIn(['data', 'address_image'])}
     />
   )
 }
