@@ -17,7 +17,6 @@ export const ProductsPageTemplate = ({
   description_four,
   heading_five,
   description_five,
-  products_images,
   image_one,
   image_two,
   image_three,
@@ -137,15 +136,11 @@ ProductsPageTemplate.propTypes = {
   description_four: PropTypes.string,
   heading_five: PropTypes.string,
   description_five: PropTypes.string,
-  products_images: PropTypes.shape({
-    heading: PropTypes.string,
-    product: PropTypes.array,
-  }),
-  image_one: PropTypes.object,
-  image_two: PropTypes.object,
-  image_three: PropTypes.object,
-  image_four: PropTypes.object,
-  image_five: PropTypes.object,
+  image_one: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image_two: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image_three: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image_four: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image_five: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const ProductsPage = ({ data }) => {
@@ -171,7 +166,6 @@ const ProductsPage = ({ data }) => {
         description_four={products.description_four}
         heading_five={products.heading_five}
         description_five={products.description_five}
-        products_images={products.products_images}
         image_one={image_one}
         image_two={image_two}
         image_three={image_three}
@@ -226,7 +220,8 @@ export const ProductsPageQuery = graphql`
                 fluid(maxWidth: 250) {
                 ...GatsbyImageSharpFluid
                 }
-              }
+							}
+						}
             heading_three
             description_three
             image_four {
@@ -234,7 +229,8 @@ export const ProductsPageQuery = graphql`
                 fluid(maxWidth: 250) {
                 ...GatsbyImageSharpFluid
                 }
-              }
+							}
+						}
             heading_four
             description_four
              image_five {
@@ -242,7 +238,8 @@ export const ProductsPageQuery = graphql`
                 fluid(maxWidth: 250) {
                 ...GatsbyImageSharpFluid
                 }
-              }
+							}
+						}
             heading_five
             description_five
           }
