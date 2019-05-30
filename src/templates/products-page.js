@@ -4,6 +4,8 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+
 export const ProductsPageTemplate = ({
   heading,
   description,
@@ -43,7 +45,10 @@ export const ProductsPageTemplate = ({
 								objectFit: 'contain',
 							}}
 						src={pic4} /> */}
-            <Img fluid={image_one.childImageSharp.fluid} />
+
+
+					{image_one.childImageSharp ?  <Img fluid={image_one.childImageSharp.fluid} /> : <img src={image_one} style={{maxWidth:'250px'}} />} 
+           
           </div>
           <div className="nine columns">
             <h1>{heading_one}</h1>
@@ -56,7 +61,8 @@ export const ProductsPageTemplate = ({
     <div className="container-fluid">
       <div className="row has-padding">
         <div className="three columns">
-          <Img fluid={image_two.childImageSharp.fluid} />
+				{image_two.childImageSharp ?  <Img fluid={image_two.childImageSharp.fluid} /> : <img src={image_two} style={{maxWidth:'250px'}} />} 
+          {/* <Img fluid={image_two.childImageSharp.fluid} /> */}
         </div>
         <div className="nine columns">
           <h1>{heading_two}</h1>
@@ -69,7 +75,8 @@ export const ProductsPageTemplate = ({
       <div className="container-fluid">
         <div className="row has-padding">
           <div className="three columns">
-            <Img fluid={image_three.childImageSharp.fluid} />
+					{image_three.childImageSharp ?  <Img fluid={image_three.childImageSharp.fluid} /> : <img src={image_three} style={{maxWidth:'250px'}} />} 
+            {/* <Img fluid={image_three.childImageSharp.fluid} /> */}
           </div>
           <div className="nine columns">
             <h1>{heading_three}</h1>
@@ -82,7 +89,8 @@ export const ProductsPageTemplate = ({
     <div className="container-fluid">
       <div className="row has-padding">
         <div className="three columns">
-          <Img fluid={image_four.childImageSharp.fluid} />
+				{image_four.childImageSharp ?  <Img fluid={image_four.childImageSharp.fluid} /> : <img src={image_four} style={{maxWidth:'250px'}} />} 
+          {/* <Img fluid={image_four.childImageSharp.fluid} /> */}
         </div>
         <div className="nine columns">
           <h1>{heading_four}</h1>
@@ -95,7 +103,8 @@ export const ProductsPageTemplate = ({
       <div className="container-fluid">
         <div className="row has-padding">
           <div className="three columns">
-            <Img fluid={image_five.childImageSharp.fluid} />
+					{image_five.childImageSharp ?  <Img fluid={image_five.childImageSharp.fluid} /> : <img src={image_five} style={{maxWidth:'250px'}} />} 
+            {/* <Img fluid={image_five.childImageSharp.fluid} /> */}
           </div>
           <div className="nine columns">
             <h1>{heading_five}</h1>
@@ -151,6 +160,8 @@ const ProductsPage = ({ data }) => {
   // const image_four = data.imageFour
   // const image_five = data.imageFive
 
+	console.log(products)
+
   return (
     <Layout>
       <ProductsPageTemplate
@@ -166,11 +177,11 @@ const ProductsPage = ({ data }) => {
         description_four={products.description_four}
         heading_five={products.heading_five}
         description_five={products.description_five}
-        image_one={image_one}
-        image_two={image_two}
-        image_three={image_three}
-        image_four={image_four}
-        image_five={image_five}
+        image_one={products.image_one}
+        image_two={products.image_two}
+        image_three={products.image_three}
+        image_four={products.image_four}
+        image_five={products.image_five}
       />
     </Layout>
   )

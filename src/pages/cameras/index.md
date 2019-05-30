@@ -6,16 +6,16 @@ description: >-
   video and audio to broadcasters around the world.  We offer a range of
   products, including portable options, all of which are very easy to use and
   reliable.
-camera_images:
-  camera:
-    - image: /img/kam1.png
-      text: PORT A CAM G2
-    - image: /img/kam2.png
-      text: PORT A CAM G1
-    - image: /img/kam3.png
-      text: OFFICE CAM 2
-    - image: /img/kam4.png
-      text: NETWORK CONNECTION
-  heading: FEATURED CAMERAS
+heading_two: Email
+description_two: Mail@Globelynx.com
+image_two: /img/services_4.jpg
+heading_three: 24/7 Support
+description_three: 24/7 support team +44 (0)20 7963 7174
+image_three: /img/services_4.jpg
+heading_four: CONTACT
+description_four: 'For sales enquiries, broadcaster requests or general info, call or email us'
+image_four: /img/services_4.jpg
+heading_five: CONTACT
+description_five: 'For sales enquiries, broadcaster requests or general info, call or email us'
 ---
 

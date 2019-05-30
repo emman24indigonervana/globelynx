@@ -22,7 +22,6 @@ export const CamearasDetailsTemplate = ({
   weight,
   portable,
   helmet,
-  camera_images,
   testimonials,
 }) => {
   const PostContent = contentComponent || Content
@@ -72,7 +71,6 @@ export const CamearasDetailsTemplate = ({
       <div className=" is-fullwidth has-background-gray">
         <div className="container-fluid">
           <div className="row has-padding has-text-centered">
-            <ServicesList productsItems={camera_images.camera} />
           </div>
         </div>
       </div>
@@ -95,17 +93,12 @@ CamearasDetailsTemplate.propTypes = {
   frame: PropTypes.string,
   weight: PropTypes.string,
   portable: PropTypes.string,
-  camera_images: PropTypes.shape({
-    heading: PropTypes.string,
-    camera: PropTypes.array,
-  }),
   testimonials: PropTypes.array,
 }
 
 const CamerasDetails = ({ data }) => {
   const {
     cameraDetailsData: post,
-    cameraData: camera,
     tesimonialsData: testimonials,
   } = data
 
@@ -114,7 +107,6 @@ const CamerasDetails = ({ data }) => {
       <CamearasDetailsTemplate
         content={post.html}
         contentComponent={HTMLContent}
-        camerasimage={post.frontmatter.camerasimage}
         name={post.frontmatter.name}
         details={post.frontmatter.details}
         recorder={post.frontmatter.recorder}
@@ -122,7 +114,6 @@ const CamerasDetails = ({ data }) => {
         weight={post.frontmatter.weight}
         portable={post.frontmatter.portable}
         testimonials={testimonials.edges[0].node.frontmatter.testimonials}
-        camera_images={camera.edges[0].node.frontmatter.camera_images}
         helmet={
           <Helmet titleTemplate="%s | Cameras">
             <title>{`${post.frontmatter.name}`}</title>
@@ -161,29 +152,6 @@ export const pageQuery = graphql`
         frame
         portable
         weight
-      }
-    }
-    cameraData: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "cameras-page" } } }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            camera_images {
-              camera {
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 240, quality: 64) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                text
-              }
-              heading
-            }
-          }
-        }
       }
     }
     tesimonialsData: allMarkdownRemark(

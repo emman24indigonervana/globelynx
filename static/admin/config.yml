@@ -91,7 +91,17 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "cameras-page"}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Camera_images, name: camera_images, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Camera, name: camera, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          - {label: Heading_two, name: heading_two, widget: string}
+          - {label: Description_two, name: description_two, widget: string}
+          - {label: Image_two, name: image_two, widget: image}
+          - {label: Heading_three, name: heading_three, widget: string}
+          - {label: Description_three, name: description_three, widget: string}
+          - {label: Image_three, name: image_three, widget: image}
+          - {label: Heading_four, name: heading_four, widget: string}
+          - {label: Description_four, name: description_four, widget: string}
+          - {label: Image_four, name: image_four, widget: image}
+          - {label: Heading_five, name: heading_five, widget: string}
+          - {label: Description_five, name: description_five, widget: string}
       - file: "src/pages/contact/index.md"
         label: "Contact"
         name: "contact"

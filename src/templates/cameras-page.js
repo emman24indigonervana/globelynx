@@ -13,24 +13,30 @@ import logoicon from '../img/logo-icon.png'
 
 export const CamerasPageTemplate = ({
   heading,
-  description,
-  testimonials,
-  camera_images,
+	description,
+	heading_two,
+	description_two,
+	heading_three,
+	description_three,
+	heading_four,
+	description_four,
+	heading_five,
+	description_five,
   cam1,
   cam2,
-  cam3,
+	cam3,
+  image_two,
+  image_three,
+  image_four,
 }) => (
   <>
     <div className="is-fullwidth">
       <div className="container-fluid ">
         <div className="row has-text-centered has-padding">
           <div className="hero1">
-            <h1>Our Cameras</h1>
+            <h1>{heading}</h1>
             <p>
-              Simple. Unique. Our cameras are sleek, with an all-in-one design,
-              a brilliant HD camera, low-latency encoder and in-built SIP sound
-              and lighting. It’s the total package for any TV ready broadcast
-              live. They range from the ultra-portable to the ultra-powerful.
+             {description}
             </p>
             {/* <Link
 className="button is-dark register-submit"
@@ -54,12 +60,11 @@ Port a cam G2
       <div className="container-fluid ">
         <div className="row has-text-centered has-padding">
           <div className="cam-1">
-            <h1>The world's smallest TV studio in a box</h1>
+            <h1>{heading_two}</h1>
             <p>
-              Fully portal broadcast high quality HD camera system – in-built
-              lights,microphone, camera & encoder.
+             {description_two}
             </p>
-            <Img fixed={cam1.childImageSharp.fixed} />
+						{image_two ?  <Img fixed={image_two.childImageSharp.fixed} /> : <img src={image_two} style={{width:'500px'}} />} 
           </div>
         </div>
       </div>
@@ -68,12 +73,12 @@ Port a cam G2
       <div className="container-fluid ">
         <div className="row has-text-centered has-padding">
           <div className="cam-2">
-            <h1>Connecting experts to broadcasters</h1>
+            <h1>{heading_three}</h1>
             <p>
-              Globelynx LITE is more capable, more versatile and more portable
-              than anything that has ever come before.
+              {description_three}
             </p>
-            <Img fixed={cam2.childImageSharp.fixed} />
+						{image_three ?  <Img fixed={image_three.childImageSharp.fixed} /> : <img src={image_three} style={{width:'500px'}} />} 
+            {/* <Img fixed={cam2.childImageSharp.fixed} /> */}
             {/*<img alt={cam2} src={cam2} />*/}
           </div>
         </div>
@@ -83,12 +88,12 @@ Port a cam G2
       <div className="container-fluid ">
         <div className="row has-text-centered has-padding">
           <div className="cam-1">
-            <h1>Self-operated, broadcast quality HD camera</h1>
+            <h1>{heading_four}</h1>
             <p>
-              Office Cam provides everything you need to turn your workplace
-              into a TV studio-ready.
+							{description_four}
             </p>
-            <Img fixed={cam3.childImageSharp.fixed} />
+						{image_four ?  <Img fixed={image_four.childImageSharp.fixed} /> : <img src={image_four} style={{width:'500px'}} />} 
+            {/* <Img fixed={cam3.childImageSharp.fixed} /> */}
             {/*<img alt={cam3} src={cam3} />*/}
           </div>
         </div>
@@ -98,10 +103,9 @@ Port a cam G2
       <div className="container-fluid ">
         <div className="row has-text-centered has-padding">
           <div className="cam-2">
-            <h1>Designed for trading floors, offices, studios and homes</h1>
+            <h1>{heading_five}</h1>
             <p>
-              Permanent connection straight to our Master Control via the
-              Globelynx network.
+              {description_five}
             </p>
             <div className="network">
               <i className="fas fa-video">
@@ -125,15 +129,21 @@ Port a cam G2
 
 CamerasPageTemplate.propTypes = {
   heading: PropTypes.string,
-  description: PropTypes.string,
-  testimonials: PropTypes.array,
-  camera_images: PropTypes.shape({
-    heading: PropTypes.string,
-    camera: PropTypes.array,
-  }),
-  cam1: PropTypes.object,
-  cam2: PropTypes.object,
-  cam3: PropTypes.object,
+	description: PropTypes.string,
+	heading_two: PropTypes.string,
+	description_two: PropTypes.string,
+	heading_three: PropTypes.string,
+	description_three: PropTypes.string,
+	heading_four: PropTypes.string,
+	description_four: PropTypes.string,
+	heading_five: PropTypes.string,
+	description_five: PropTypes.string,
+  cam1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  cam2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+	cam3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image_two: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image_three: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+  image_four: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 }
 
 const CamerasPage = ({ data }) => {
@@ -141,18 +151,29 @@ const CamerasPage = ({ data }) => {
 
   const cam1 = data.imageOne
   const cam2 = data.imageTwo
-  const cam3 = data.imageThree
+	const cam3 = data.imageThree
+	
+	console.log(data)
 
   return (
     <Layout>
       <CamerasPageTemplate
         heading={home.frontmatter.heading}
-        description={home.frontmatter.description}
-        testimonials={testimonials.edges[0].node.frontmatter.testimonials}
-        camera_images={home.frontmatter.camera_images}
+				description={home.frontmatter.description}
+				heading_two={home.frontmatter.heading_two}
+				description_two={home.frontmatter.description_two}
+				heading_three={home.frontmatter.heading_three}
+				description_three={home.frontmatter.description_three}
+				heading_four={home.frontmatter.heading_four}
+				description_four={home.frontmatter.description_four}
+				heading_five={home.frontmatter.heading_five}
+				description_five={home.frontmatter.description_five}
         cam1={cam1}
         cam2={cam2}
-        cam3={cam3}
+				cam3={cam3}
+        image_two={home.frontmatter.image_two}
+        image_three={home.frontmatter.image_three}
+        image_four={home.frontmatter.image_four}
       />
     </Layout>
   )
@@ -195,35 +216,36 @@ export const CamerasPageQuery = graphql`
       html
       frontmatter {
         heading
-        description
-        camera_images {
-          camera {
-            image {
-              childImageSharp {
-                fluid(maxWidth: 240, quality: 64) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-            text
-          }
-          heading
-        }
-      }
-    }
-    tesimonialsData: allMarkdownRemark(
-      filter: { frontmatter: { templateKey: { eq: "home-page" } } }
-    ) {
-      edges {
-        node {
-          id
-          frontmatter {
-            testimonials {
-              author
-              quote
-            }
-          }
-        }
+				description
+        heading_two
+				description_two
+				image_two {
+					childImageSharp {
+					  fixed(width: 500) {
+							...GatsbyImageSharpFixed
+						}
+					}
+				}
+        heading_three
+				description_three
+				image_three {
+					childImageSharp {
+					  fixed(width: 500) {
+							...GatsbyImageSharpFixed
+						}
+					}
+				}
+				heading_four
+				description_four
+				image_four {
+					childImageSharp {
+					  fixed(width: 500) {
+							...GatsbyImageSharpFixed
+						}
+					}
+				}
+				heading_five
+        description_five
       }
     }
   }
