@@ -56,9 +56,9 @@ export const HomePageTemplate = ({
     >
       <div className="row">
         <div className="has-text-centered has-padding">
-          {/* <h1>{heading}</h1>
-					<p>{description}</p> */}
-          <h1>What is Globelynx</h1>
+         <h1>{heading}</h1>
+					<p>{description}</p> 
+         {/* <h1>What is Globelynx</h1>
           <p>
             We are a club of experts; an extensive ecosystem of trusted experts
             – available for analysis and interview on an array of subjects, and
@@ -67,7 +67,7 @@ export const HomePageTemplate = ({
             via a keyword search or by looking for specific individuals or
             organisations. Every expert is framed, lit and focused
             professionally and delivered in broadcast-quality HD.
-          </p>
+          </p>*/}
           {/* <Link to="/about" className="button">Discover More</Link> */}
         </div>
       </div>
@@ -132,7 +132,7 @@ export const HomePageTemplate = ({
       </div>
     </div>
     <RegisterSection />
-    {/*<Testimonials testimonials={testimonials} />*/}
+   <Testimonials testimonials={testimonials} />
   </div>
 )
 

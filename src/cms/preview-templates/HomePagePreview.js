@@ -14,6 +14,7 @@ const HomePagePreview = ({ entry, getAsset }) => {
       lowBanner={entry.getIn(['data', 'low_banner'])}
       basicInfo={entry.getIn(['data', 'basic_info'])}
       basicDescription={entry.getIn(['data', 'basic_description'])}
+      testimonials={testimonials}
     />
   )
 }

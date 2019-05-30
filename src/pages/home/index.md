@@ -17,17 +17,6 @@ basic_description: >-
   all locations, from Europe to Necker Island, from London to Paris and
   Frankfurt.  The team delivers thousands of live camera broadcasts every year
   to the world’s major TV news channels and manages scores of camera sites.
-work_process:
-  heading: Current Topics
-  works:
-    - image: /img/work1.png
-      text: work 1
-    - image: /img/work2.png
-      text: work 2
-    - image: /img/work3.png
-      text: work3
-    - image: /img/work4.png
-      text: work4
 testimonials:
   - author: >-
       <p class="message-author"> - Russell Reader</p> <p
