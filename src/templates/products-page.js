@@ -18,11 +18,11 @@ export const ProductsPageTemplate = ({
   heading_five,
   description_five,
   products_images,
-  cam1,
-  cam2,
-  cam3,
-  cam4,
-  cam5,
+  image_one,
+  image_two,
+  image_three,
+  image_four,
+  image_five,
 }) => (
   <>
     <div className="container-fluid">
@@ -44,7 +44,7 @@ export const ProductsPageTemplate = ({
 								objectFit: 'contain',
 							}}
 						src={pic4} /> */}
-            <Img fluid={cam1.childImageSharp.fluid} />
+            <Img fluid={image_one.childImageSharp.fluid} />
           </div>
           <div className="nine columns">
             <h1>{heading_one}</h1>
@@ -57,7 +57,7 @@ export const ProductsPageTemplate = ({
     <div className="container-fluid">
       <div className="row has-padding">
         <div className="three columns">
-          <Img fluid={cam2.childImageSharp.fluid} />
+          <Img fluid={image_two.childImageSharp.fluid} />
         </div>
         <div className="nine columns">
           <h1>{heading_two}</h1>
@@ -70,7 +70,7 @@ export const ProductsPageTemplate = ({
       <div className="container-fluid">
         <div className="row has-padding">
           <div className="three columns">
-            <Img fluid={cam3.childImageSharp.fluid} />
+            <Img fluid={image_three.childImageSharp.fluid} />
           </div>
           <div className="nine columns">
             <h1>{heading_three}</h1>
@@ -83,7 +83,7 @@ export const ProductsPageTemplate = ({
     <div className="container-fluid">
       <div className="row has-padding">
         <div className="three columns">
-          <Img fluid={cam4.childImageSharp.fluid} />
+          <Img fluid={image_four.childImageSharp.fluid} />
         </div>
         <div className="nine columns">
           <h1>{heading_four}</h1>
@@ -96,7 +96,7 @@ export const ProductsPageTemplate = ({
       <div className="container-fluid">
         <div className="row has-padding">
           <div className="three columns">
-            <Img fluid={cam5.childImageSharp.fluid} />
+            <Img fluid={image_five.childImageSharp.fluid} />
           </div>
           <div className="nine columns">
             <h1>{heading_five}</h1>
@@ -141,20 +141,20 @@ ProductsPageTemplate.propTypes = {
     heading: PropTypes.string,
     product: PropTypes.array,
   }),
-  cam1: PropTypes.object,
-  cam2: PropTypes.object,
-  cam3: PropTypes.object,
-  cam4: PropTypes.object,
-  cam5: PropTypes.object,
+  image_one: PropTypes.object,
+  image_two: PropTypes.object,
+  image_three: PropTypes.object,
+  image_four: PropTypes.object,
+  image_five: PropTypes.object,
 }
 
 const ProductsPage = ({ data }) => {
   const { frontmatter: products } = data.productsPageData.edges[0].node
-  const cam1 = data.imageOne
-  const cam2 = data.imageTwo
-  const cam3 = data.imageThree
-  const cam4 = data.imageFour
-  const cam5 = data.imageFive
+  // const image_one = data.imageOne
+  // const image_two = data.imageTwo
+  // const image_three = data.imageThree
+  // const image_four = data.imageFour
+  // const image_five = data.imageFive
 
   return (
     <Layout>
@@ -172,11 +172,11 @@ const ProductsPage = ({ data }) => {
         heading_five={products.heading_five}
         description_five={products.description_five}
         products_images={products.products_images}
-        cam1={cam1}
-        cam2={cam2}
-        cam3={cam3}
-        cam4={cam4}
-        cam5={cam5}
+        image_one={image_one}
+        image_two={image_two}
+        image_three={image_three}
+        image_four={image_four}
+        image_five={image_five}
       />
     </Layout>
   )
@@ -194,41 +194,6 @@ export default ProductsPage
 
 export const ProductsPageQuery = graphql`
   query {
-    imageOne: file(relativePath: { eq: "services_4.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imageTwo: file(relativePath: { eq: "services_2.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imageThree: file(relativePath: { eq: "services_7.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imageFour: file(relativePath: { eq: "services_6.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
-    imageFive: file(relativePath: { eq: "services_5.png" }) {
-      childImageSharp {
-        fluid(maxWidth: 250) {
-          ...GatsbyImageSharpFluid
-        }
-      }
-    }
     productsPageData: allMarkdownRemark(
       filter: { frontmatter: { templateKey: { eq: "products-page" } } }
     ) {
@@ -238,30 +203,48 @@ export const ProductsPageQuery = graphql`
           frontmatter {
             heading
             description
+             image_one {
+              childImageSharp {
+                fluid(maxWidth: 250) {
+                ...GatsbyImageSharpFluid
+                }
+              }
+            }
             heading_one
             description_one
+            image_two {
+              childImageSharp {
+                fluid(maxWidth: 250) {
+                ...GatsbyImageSharpFluid
+                }
+              }
+            }
             heading_two
             description_two
-            basic_description
+            image_three {
+              childImageSharp {
+                fluid(maxWidth: 250) {
+                ...GatsbyImageSharpFluid
+                }
+              }
             heading_three
             description_three
+            image_four {
+              childImageSharp {
+                fluid(maxWidth: 250) {
+                ...GatsbyImageSharpFluid
+                }
+              }
             heading_four
             description_four
+             image_five {
+              childImageSharp {
+                fluid(maxWidth: 250) {
+                ...GatsbyImageSharpFluid
+                }
+              }
             heading_five
             description_five
-            products_images {
-              product {
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 240, quality: 64) {
-                      ...GatsbyImageSharpFluid
-                    }
-                  }
-                }
-                text
-              }
-              heading
-            }
           }
         }
       }
