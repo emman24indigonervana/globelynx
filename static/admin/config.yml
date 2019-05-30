@@ -1,10 +1,6 @@
 backend:
-  name: bitbucket
-  repo: indigomelody/globelynx_netlifycms
-  branch: emman_v1
-  accept_roles:
-    - admin
-    - editor
+  name: git-gateway
+  branch: master
   
 media_folder: static/img
 public_folder: /img
