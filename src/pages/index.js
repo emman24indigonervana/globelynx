@@ -143,6 +143,7 @@ HomePageTemplate.propTypes = {
   lowBanner: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   basicInfo: PropTypes.string,
   basicDescription: PropTypes.string,
+  testimonials: PropTypes.array,
   scrollHere: PropTypes.string,
 }
 
@@ -160,6 +161,7 @@ const HomePage = ({ data }) => {
         lowBanner={home.low_banner}
         basicInfo={home.basic_info}
         basicDescription={home.basic_description}
+        testimonials={home.testimonials}
         scrollHere="scrollhere"
       />
     </Layout>
@@ -204,6 +206,10 @@ export const HomePageQuery = graphql`
             }
             basic_info
             basic_description
+            testimonials {
+              author
+              quote
+            }
           }
         }
       }

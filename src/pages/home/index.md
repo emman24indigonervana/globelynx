@@ -28,5 +28,30 @@ work_process:
       text: work3
     - image: /img/work4.png
       text: work4
+testimonials:
+  - author: >-
+      <p class="message-author"> - Russell Reader</p> <p
+      class="message-author-position">Head of Media Engagement, Lancaster
+      University</p>
+    quote: >-
+      "I found the whole process of implementing Globelynx - from the initial
+      order through to installation - to be slick, straightforward and seamless,
+      with fantastic support from  everybody involved. An additional bonus was
+      the industry insight and guidance that we  received in getting started -
+      which helped us to secure 25 TV interviews in our first six weeks of
+      operation, across networks including the BBC, Sky, ITV, CNBC and
+      France24."
+  - author: >-
+      <p class="message-author"> - Nick Parsons</p> <p
+      class="message-author-position">Head of Markets Strategy, Europe</p>
+    quote: >-
+      “Globelynx makes broadcasting simple, clear and easy. I am very happy with
+      the equipment, the back-up and the service we receive."
+  - author: >-
+      <p class="message-author"> - Bloomberg TV London</p> <p
+      class="message-author-position">Interview Team</p>
+    quote: >-
+      "We wish all cameras were as easy to book as the cameras on the Globelynx
+      network."
 ---
 
