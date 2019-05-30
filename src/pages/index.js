@@ -16,6 +16,8 @@ import ExpertsMap from '../components/Maps/ExpertsMap'
 
 import arrowdown from '../img/arrow-down.png'
 
+import fakemap from '../img/fake_map.png'
+
 const scrollToComponent = require('react-scroll-to-component')
 
 export const HomePageTemplate = ({
@@ -25,7 +27,6 @@ export const HomePageTemplate = ({
   lowBanner,
   basicInfo,
   basicDescription,
-  workProcess,
   testimonials,
   scrollHere,
 }) => (
@@ -73,7 +74,7 @@ export const HomePageTemplate = ({
       </div>
     </div>
     <div className="is-fullwidth ">
-      <ExpertsMap />
+      { midBanner.childImageSharp ? <ExpertsMap /> :  <img src={fakemap} />}
     </div>
     <div
       className="full-width-image-container"
@@ -132,7 +133,7 @@ export const HomePageTemplate = ({
       </div>
     </div>
     <RegisterSection />
-   <Testimonials testimonials={testimonials} />
+    <Testimonials testimonials={testimonials} />
   </div>
 )
 
