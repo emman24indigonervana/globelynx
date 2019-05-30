@@ -132,7 +132,7 @@ export const HomePageTemplate = ({
       </div>
     </div>
     <RegisterSection />
-    <Testimonials testimonials={testimonials} />
+    {/*<Testimonials testimonials={testimonials} />*/}
   </div>
 )
 
@@ -143,11 +143,6 @@ HomePageTemplate.propTypes = {
   lowBanner: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   basicInfo: PropTypes.string,
   basicDescription: PropTypes.string,
-  workProcess: PropTypes.shape({
-    heading: PropTypes.string,
-    works: PropTypes.array,
-  }),
-  testimonials: PropTypes.array,
   scrollHere: PropTypes.string,
 }
 
@@ -165,7 +160,6 @@ const HomePage = ({ data }) => {
         lowBanner={home.low_banner}
         basicInfo={home.basic_info}
         basicDescription={home.basic_description}
-        testimonials={home.testimonials}
         scrollHere="scrollhere"
       />
     </Layout>
@@ -210,10 +204,6 @@ export const HomePageQuery = graphql`
             }
             basic_info
             basic_description
-            testimonials {
-              author
-              quote
-            }
           }
         }
       }
