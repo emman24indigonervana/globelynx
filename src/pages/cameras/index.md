@@ -6,16 +6,22 @@ description: >-
   video and audio to broadcasters around the world.  We offer a range of
   products, including portable options, all of which are very easy to use and
   reliable.
-heading_two: Email
-description_two: Mail@Globelynx.com
-image_two: /img/services_4.jpg
-heading_three: 24/7 Support
-description_three: 24/7 support team +44 (0)20 7963 7174
-image_three: /img/services_4.jpg
-heading_four: CONTACT
-description_four: 'For sales enquiries, broadcaster requests or general info, call or email us'
-image_four: /img/services_4.jpg
-heading_five: CONTACT
-description_five: 'For sales enquiries, broadcaster requests or general info, call or email us'
+heading_two: THE WORLD'S SMALLEST TV STUDIO IN A BOX
+description_two: >-
+  Fully portal broadcast high quality HD camera system – in-built
+  lights,microphone, camera & encoder.
+image_two: /img/camerapage1.png
+heading_three: CONNECTING EXPERTS TO BROADCASTERS
+description_three: >-
+  Globelynx LITE is more capable, more versatile and more portable than anything
+  that has ever come before.
+image_three: /img/camerapage2.png
+heading_four: 'SELF-OPERATED, BROADCAST QUALITY HD CAMERA'
+description_four: >-
+  Office Cam provides everything you need to turn your workplace into a TV
+  studio-ready.
+image_four: /img/camerapage3.png
+heading_five: 'DESIGNED FOR TRADING FLOORS, OFFICES, STUDIOS AND HOMES'
+description_five: Permanent connection straight to our Master Control via the Globelynx network.
 ---
 
