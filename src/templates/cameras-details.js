@@ -43,7 +43,7 @@ export const CamearasDetailsTemplate = ({
             >
               ENQUIRE NOW
             </a>
-            <PreviewCompatibleImage imageInfo={camerasimage} />
+            {/*<PreviewCompatibleImage imageInfo={camerasimage} />*/}
             <a
               href="/home"
               className="button is-fullwidth experts-profile-enquire-btn"
