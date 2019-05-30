@@ -1,0 +1,165 @@
+.experts-details-container {
+	margin-top: 20px;
+	padding: 10px;
+	border:1px solid #e8e8e8; 
+	background:#f7f5f6;
+	border-radius:5px;
+
+	.experts-details-icon-container {
+		
+		.experts-details-icon {
+			color: #fff;
+			background: rgb(78, 88, 99);
+			border-radius: 100%;
+			padding: 10px;
+			margin: 5px;
+			text-align: left;
+		}
+
+		span {
+			font-size: 12px;
+		}
+	}
+	
+
+	h3 {
+			font-size: 20px;
+			font-family: "Roboto";
+			color: rgb(78, 88, 99);
+			text-transform: uppercase;
+			line-height: 1.2;
+			letter-spacing: 4px;
+	}
+
+	p {
+			font-size: 13px;
+			font-family: "Roboto";
+			color: rgb(78, 88, 99);
+	}
+
+
+}
+
+.expert-detail-title, .expert-name  {
+		font-size: 25px;
+		font-family: "Roboto";
+		color: rgb(78, 88, 99);
+		text-transform: uppercase;
+		line-height: 1.2;
+		letter-spacing: 4px;
+
+}
+
+.experts-profile-container {
+
+	.experts-profile-image {
+		height: 280px;
+		width: 100%;
+		object-fit: cover;
+	}
+
+}
+
+
+.experts-profile-enquire-btn {
+	height: 40px;
+	line-height: 40px;
+	border-radius: 4px;
+}
+
+.experts-profile-name {
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.experts-video {
+	bottom:0;
+	margin-bottom: 5rem;
+}
+
+
+/* Larger than mobile */
+@media (min-width: 320px) {
+
+	.experts-video{
+		position: relative;
+	}
+
+	.profile-banner{
+		.profile-details {
+			h1, h2 {
+				color: #4e5863;
+			}
+			
+			h1 {
+				font-size: 2.5rem;
+				margin-bottom: 0;
+			}
+		}
+	}
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+
+
+.profile-banner {
+	background:url('../../img/profile-banner-bg2.svg');
+	height: 301px;
+	background-size: contain;
+	background-position-x: 160px;
+	background-repeat: no-repeat;
+
+
+	/*test*/
+	position: absolute;
+	width: 97%;
+	top: 0;
+	right: 0;
+
+	.profile-details {
+		text-align: left;
+    position: absolute;
+		left: 27%;
+    top: 15%;
+    bottom: 0;
+		height: 190px;
+		
+		h1, h2 {
+			color: #fff;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 0;
+		}
+
+	}
+}
+
+
+
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+	.experts-video  {
+		position: absolute;
+	}
+
+}

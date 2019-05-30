@@ -1,0 +1,121 @@
+.footer-lists {
+
+	li {
+		list-style: none;
+		margin-bottom: 12px;
+		
+		a{
+			color: #fff;
+			text-decoration: none;
+			font-weight: 300;
+		}
+	}
+
+}
+
+.footer-form-container {
+	
+	.footer-form-input {
+		height: 35px;
+	}
+
+	.footer-form-textarea {
+		height: 75px;
+	}
+
+	.footer-form-input, .footer-form-textarea {
+		background: #64ccdf;
+		color: #fff;
+		margin: 1.5%;
+		border-radius: 0;
+		border: 1px solid rgba(255, 255, 255, 0.5);
+	}
+
+	.footer-form-submit {
+		margin: 1.5%;
+		background: transparent;
+		background: #fff;
+		color:#3dbfd7;
+		float: right;
+		font-weight: bold;
+		width:100px;
+		padding:0;
+		border-radius: 0;
+		border:0;
+		height: 35px;
+		line-height: 35px;
+	}
+
+	
+	.footer-form-submit:hover {
+		background: #fff;
+		color:#3dbfd7;
+	}
+
+	.footer-form-input:focus,	.footer-form-textarea:focus {
+			border:1px solid #fff;
+	}
+
+	.footer-form-input::placeholder,	.footer-form-textarea::placeholder{ 
+		color: #fff;
+	}
+
+	.footer-link-container {
+
+		.footer-a-link {
+			text-decoration: none;
+			font-weight: 300;
+		}
+	
+		.footer-icon-span {
+			color:#fff;
+		}
+	
+		.footer-form-icon {
+			padding: 6px;
+			border-radius: 100%;
+			background: #4e5863;
+			color: #fff;
+			margin: 10px;
+		}
+	
+	}
+
+}
+
+
+/* Larger than mobile */
+@media (min-width: 320px) {
+
+}
+
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+	
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+	.footer-form-container {
+		height: 200px;
+		position: relative;
+
+		.footer-link-container {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}

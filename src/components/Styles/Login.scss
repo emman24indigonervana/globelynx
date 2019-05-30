@@ -1,0 +1,26 @@
+.login-form-container{
+  width: 285px;
+  padding: 30px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0 0 5px #eaeaea;
+  border-radius: 3px;
+  background: #fbfbfb;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30vh;
+
+  .login-form-input {
+    margin: 15px;
+
+      input {
+        width: 100%;
+      }
+  }
+
+  span {
+    font-style: italic;
+    font-size: 14px;
+  }
+}

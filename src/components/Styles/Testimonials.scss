@@ -1,0 +1,31 @@
+
+
+.message {
+	background-color: #f5f5f5;
+	border-radius: 4px;
+	font-size: 1rem;
+
+	.message-body {
+		border-style: none;
+		border-radius: 4px;
+		color: #4a4a4a;
+		padding: 1.25em 1.5em;
+		font-weight: 300;
+		font-size: 18px;
+		line-height: 2;
+
+		.message-span {
+			.message-author {
+				font-style: italic;
+				margin-bottom: 0;
+				
+				font-size: 17px;
+			}
+	
+			.message-author-position {
+				margin: 0;
+				font-size: 14px;
+			}
+		}
+	}
+}

@@ -1,0 +1,118 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import { graphql } from 'gatsby'
+import Layout from '../components/Layout'
+
+import RegisterSection from '../components/Register'
+import Testimonials from '../components/Testimonials'
+
+// import Features from '../components/Features'
+
+import ServicesList from '../components/ServicesList'
+
+import '../components/Styles/CamerasPage.scss'
+
+export const CamerasPageTemplate = ({
+  heading,
+  description,
+  testimonials,
+  camera_images,
+}) => (
+    <>
+      <div className="container-fluid">
+        <div className="row has-padding">
+          <div className="has-text-centered">
+              <h1>{heading}</h1>
+              <p>{description}</p>
+          </div>
+        </div>
+      </div>
+      <div className=" is-fullwidth has-background-gray">
+        <div className="container-fluid">
+          <div className="row has-padding has-text-centered">
+            {/* <h1>{featuredCameras.heading}</h1> */}
+              {/* <CameraLists /> */}
+                <ServicesList productsItems={camera_images.camera} />
+            {/* <Link to="camerasDetails/Cameras-sony-camera">
+              <Features gridItems={featuredCameras.cameras} columnSize="three" />
+            </Link> */}
+          </div>
+        </div>
+      </div>
+      <RegisterSection />
+      <Testimonials testimonials={testimonials} />
+    </>
+  )
+
+CamerasPageTemplate.propTypes = {
+  heading: PropTypes.string,
+  description: PropTypes.string,
+  testimonials: PropTypes.array,
+  camera_images: PropTypes.shape({
+    heading: PropTypes.string,
+    camera: PropTypes.array,
+  }),
+}
+
+const CamerasPage = ({ data }) => {
+  const { camerasPageData: home, tesimonialsData: testimonials } = data
+
+
+  return (
+    <Layout>
+      <CamerasPageTemplate
+        heading={home.frontmatter.heading}
+        description={home.frontmatter.description}
+        testimonials={testimonials.edges[0].node.frontmatter.testimonials}
+        camera_images={home.frontmatter.camera_images}
+      />
+    </Layout>
+  )
+}
+
+CamerasPage.propTypes = {
+  data: PropTypes.shape({
+    markdownRemark: PropTypes.shape({
+      frontmatter: PropTypes.object,
+    }),
+  }),
+}
+
+export default CamerasPage
+
+export const CamerasPageQuery = graphql`
+  query CamerasPage($id: String!) {
+    camerasPageData: markdownRemark(id: { eq: $id }) {
+      frontmatter {
+          heading
+          description
+          camera_images {
+            camera {
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 240, quality: 64) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+              text
+            }
+            heading
+          }
+        }
+      }
+    tesimonialsData: allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "home-page" }} }){
+      edges {
+        node {
+          id
+            frontmatter {
+              testimonials {
+                author
+                quote
+              }
+          }
+      }
+    }
+  }
+}
+`

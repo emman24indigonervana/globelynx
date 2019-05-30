@@ -1,0 +1,311 @@
+.hero1 {
+    background: white;
+    color: #777;
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+
+
+    .camera-animation {
+        margin-top: 30px;
+        width: 100%;
+        position: relative;
+        height: 300px;
+
+        .camera-animation-camera {
+            position: absolute;
+            height: 300px;
+            width: 300px;
+            top: 0;
+            border-radius: 10px;
+
+            &.left {
+                background: url('../../img/camerapage1.png') no-repeat;
+                background-size: 100% auto;
+                height: 300px;
+                width: 250px;
+                margin-top: 45px;
+                z-index: 2;
+                right: 100%;
+                animation: leftCamera 1.25s ease-in-out 1s forwards;
+            }
+
+            &.right {
+                background: url('../../img/camerapage2.png') no-repeat;
+                background-size: 100% auto;
+                background-position: center bottom;
+                z-index: 2;
+                left: 100%;
+                animation: rightCamera 1.25s ease-in-out 1s forwards;
+            }
+        }
+    }
+}
+
+@keyframes leftCamera {
+    from {
+        right: 100%;
+    }
+
+    to {
+        right: 50%;
+        margin-right: -20px;
+    }
+}
+
+@keyframes rightCamera {
+    from {
+        left: 100%;
+    }
+
+    to {
+        left: 50%;
+        margin-left: -80px;
+    }
+}
+
+.cam-1 {
+    padding: 50px 0px;
+    //color: white;
+    text-align: center;
+    // background: #4e5863;
+
+		background: #f7f5f6;
+
+    // h1 {
+    //    color: white;
+    //     // font-size: 36px;
+    // }
+
+    // h2 {
+    //     font-size: 18px;
+    // }
+
+    img {
+        width: 500px;
+    }
+}
+
+.cam-2 {
+    background: white;
+    color: #777;
+    width: 100%;
+    padding: 50px 0px;
+    text-align: center;
+
+    h1 {
+        font-size: 36px;
+    }
+
+    // h2 {
+    //     font-size: 18px;
+    // }
+
+    img {
+        width: 500px;
+    }
+}
+
+.cam {
+	padding: 50px 0;
+	color: #fff;
+	text-align: center
+}
+
+.cam h1 {
+	font-size: 36px
+}
+
+.cam h2 {
+	font-size: 18px
+}
+
+.cam img {
+	width: 500px
+}
+
+.cam-2,
+.cam-4 {
+	background: #fff;
+	color: #777
+}
+
+.network {
+	position: inline-block;
+	width: 500px;
+	margin: 0 auto
+}
+
+.fas {
+	font-size: 100px;
+	display: inline-block
+}
+
+.fa-cloud,
+.fas {
+	position: relative;
+	color: #4e5863
+}
+
+.fa-cloud {
+	-webkit-animation: cloud 1s linear infinite alternate;
+	animation: cloud 1s linear infinite alternate
+}
+
+.fa-cloud img {
+	position: absolute;
+	width: 40px;
+	height: auto;
+	left: 50%;
+	top: 55%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+}
+
+.fa-circle-notch {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 50px;
+	color: #fff;
+	-webkit-transform: translate(-85%, -50%);
+	transform: translate(-85%, -50%);
+	-webkit-animation: recording 1s linear infinite forwards;
+	animation: recording 1s linear infinite forwards
+}
+
+.line {
+	display: inline-block;
+	position: relative;
+	top: -35px;
+	width: 200px;
+	height: 6px;
+	background: #777;
+	border-radius: 5px;
+	margin: 0 20px;
+	background: #4e5863
+}
+
+.line .orb {
+	position: absolute;
+	height: 6px;
+	width: 6px;
+	border-radius: 6px;
+	background: #4e5863;
+	top: 50%;
+	-webkit-transform: translateY(-50%) scale(2);
+	transform: translateY(-50%) scale(2)
+}
+
+.line .orb-1 {
+	-webkit-animation: orb 1s linear .25s infinite forwards;
+	animation: orb 1s linear .25s infinite forwards;
+	width: 4px;
+	height: 4px
+}
+
+.line .orb-2 {
+	-webkit-animation: orb 1s linear infinite forwards;
+	animation: orb 1s linear infinite forwards
+}
+
+.line .orb-3 {
+	width: 4px;
+	height: 4px;
+	-webkit-animation: orb 1s linear .75s infinite forwards;
+	animation: orb 1s linear .75s infinite forwards
+}
+
+@-webkit-keyframes orb {
+	0% {
+			-webkit-transform: translateY(-50%) scale(0);
+			transform: translateY(-50%) scale(0);
+			left: 0
+	}
+	25% {
+			-webkit-transform: translateY(-50%) scale(2);
+			transform: translateY(-50%) scale(2)
+	}
+	50% {
+			-webkit-transform: translateY(-50%) scale(3);
+			transform: translateY(-50%) scale(3)
+	}
+	75% {
+			-webkit-transform: translateY(-50%) scale(2);
+			transform: translateY(-50%) scale(2)
+	}
+	to {
+			-webkit-transform: translateY(-50%) scale(0);
+			transform: translateY(-50%) scale(0);
+			left: 100%
+	}
+}
+
+@keyframes orb {
+	0% {
+			-webkit-transform: translateY(-50%) scale(0);
+			transform: translateY(-50%) scale(0);
+			left: 0
+	}
+	25% {
+			-webkit-transform: translateY(-50%) scale(2);
+			transform: translateY(-50%) scale(2)
+	}
+	50% {
+			-webkit-transform: translateY(-50%) scale(3);
+			transform: translateY(-50%) scale(3)
+	}
+	75% {
+			-webkit-transform: translateY(-50%) scale(2);
+			transform: translateY(-50%) scale(2)
+	}
+	to {
+			-webkit-transform: translateY(-50%) scale(0);
+			transform: translateY(-50%) scale(0);
+			left: 100%
+	}
+}
+
+@-webkit-keyframes cloud {
+	0% {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+	}
+	to {
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1)
+	}
+}
+
+@keyframes cloud {
+	0% {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+	}
+	to {
+			-webkit-transform: scale(1.1);
+			transform: scale(1.1)
+	}
+}
+
+@-webkit-keyframes recording {
+	0% {
+			-webkit-transform: translate(-85%, -50%) rotate(0deg);
+			transform: translate(-85%, -50%) rotate(0deg)
+	}
+	to {
+			-webkit-transform: translate(-85%, -50%) rotate(1turn);
+			transform: translate(-85%, -50%) rotate(1turn)
+	}
+}
+
+@keyframes recording {
+	0% {
+			-webkit-transform: translate(-85%, -50%) rotate(0deg);
+			transform: translate(-85%, -50%) rotate(0deg)
+	}
+	to {
+			-webkit-transform: translate(-85%, -50%) rotate(1turn);
+			transform: translate(-85%, -50%) rotate(1turn)
+	}
+}

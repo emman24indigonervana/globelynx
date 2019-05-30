@@ -1,0 +1,862 @@
+
+{
+"companyData" : [
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [47.3621268,8.5466626], 
+    "address":"Dufourstrasse 48, CH9000",
+    "company": "University of St.Gallen"
+  },
+  // {
+  //  "id":0,
+  //  "sector":"Education",
+  //  "position": [53.3438484,-6.2572406], 
+  //  "address":"",
+ //    "company": "Trinity College Dublin"
+  // },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [48.1522848,11.5802857], 
+    "address":"Ludwig-Maximilians-Universität München, Stellvertretende Leitung, Leopoldstr. 3, Zi. 002, 80802 München",
+    "company": "Munich University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [53.3450874,-6.2595641], 
+    "address":"East Theatre, Front Square, Trinity College Dublin, the University of Dublin, Dublin 2",
+    "company": "Trinity College"
+  },
+  // {
+  //  "id":0,
+  //  "sector":"Education",
+  //  "position": [48.1522848,11.5802857], 
+  //  "address":"",
+ //    "company": "Munich University"
+  // },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [53.0030543,-2.2759099], 
+    "address":"Keele, Newcastle ST5 5BG",
+    "company": "Keele University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [54.0106632,-2.7904257], 
+    "address":"Bailrigg, Lancaster, LA1 4YW",
+    "company": "Lancaster University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [53.4064018,-2.9777427], 
+    "address":"Liverpool, L69 3BX",
+    "company": "Liverpool University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [54.5841268,-5.9387589], 
+    "address":"University Road, Belfast, BT7 1NN",
+    "company": "Queens University Belfast"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [51.4440708,-0.9390086], 
+    "address":"Whiteknights, Reading, RG6 6AH",
+    "company": "University of Reading"
+  },
+  {
+    "id":146,
+    "sector":"Education",
+    "position": [54.7685816,-1.5742958], 
+    "address":"The Palatine Centre, Durham, DH1 3LE",
+    "company": "Durham University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [51.8781733,0.9484324], 
+    "address":"Wivenhoe Park, Colchester, CO4 3SQ",
+    "company": "Essex University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [52.7679338,-1.2249414], 
+    "address":"Epinal Way, Loughborough, LE11 3TU",
+    "company": "Loughborough University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [54.977109,-1.6084894], 
+    "address":"Newcastle-upon-Tyne, NE1 8ST",
+    "company": "Northumbria University"
+  },
+  {
+    "id":916,
+    "sector":"Education",
+    "position": [52.9399151,-1.194502], 
+    "address":"The University of Notthingham, NG7 2RD",
+    "company": "The University of Nottingham"
+  },
+  // {
+  //  "id":1026,
+  //  "sector":"Education",
+  //  "position": [56.3365554,-2.8252859], 
+  //  "address":"",
+ //    "company": "St. Andrews University"
+  // },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [51.7579913,-1.2643483], 
+    "address":"Oxford, OX1 2JD",
+    "company": "Oxford University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [51.5245625,-0.1362288], 
+    "address":"University College London, Gower Street, London, WC1E 6BT",
+    "company": "UCL"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [52.6233411,1.2271699], 
+    "address":"Norwich Research Park, Norwich, NR4 7TJ",
+    "company": "UEA University"
+  },
+  // {
+  //  "id":0,
+  //  "sector":"Education",
+  //  "position": [52.4477636,-6.8140737], 
+  //  "address":"",
+ //    "company": "University of East Anglia"
+  // },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [53.7628729,-2.7112242], 
+    "address":"Chandler Building, University of Central Lancashire, Preston, PR1 2HE ",
+    "company": "University of Central Lancashire"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [52.3860274,-1.5671319], 
+    "address":"Coventry, CV4 7AL",
+    "company": "University of Warwick"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [-32.0012883,115.8851693], 
+    "address":"Kent Street, Bentley, Perth, Western Australia 6102",
+    "company": "Curtin University"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [-34.4079525,150.8749463], 
+    "address":"Northfields Ave, Wollongong NSW 2522, Australia",
+    "company": "University of Wollongong"
+  },
+  {
+    "id":0,
+    "sector":"Education",
+    "position": [-33.9168645,151.2277273], 
+    "address":"Sydney NSW 2052, Australia",
+    "company": "UNSW"
+  },
+  {
+    "id":0,
+    "sector":"Transport",
+    "position": [53.3317949,-6.234245], 
+    "address":"Building 1, Number One Ballsbridge, Shelbourne Rd, Ballsbridge, Co. Dublin",
+    "company": "Avolon Aerospace"
+  },
+  {
+    "id":273,
+    "sector":"Transport",
+    "position": [51.4764132,-0.4610119], 
+    "address":"The Compass Centre, TW6 2GW",
+    "company": "Heathrow Airport - Fixed Camera"
+  },
+  {
+    "id":0,
+    "sector":"Transport",
+    "position": [50.8824122,-1.2417832], 
+    "address":"4000 Parkway, Whiteley, Fareham, PO15 7FL",
+    "company": "NATS"
+  },
+  {
+    "id":0,
+    "sector":"Transport",
+    "position": [55.4977082,-4.5926589], 
+    "address":"Fresson Avenue, Prestwick, KA9 2GX",
+    "company": "NATS"
+  },
+  {
+    "id":0,
+    "sector":"Lawyers",
+    "position": [53.4794274,-2.2436306], 
+    "address":"58 Mosley Street, M2 3HZ",
+    "company": "Slater & Gordon Manchester"
+  },
+  {
+    "id":0,
+    "sector":"Audit/Professional Services",
+    "position": [51.5421502,-0.0116321], 
+    "address":"12 Endeavour Square, London E20 1JN",
+    "company": "Financial Conduct Authority"
+  },
+  // {
+  //  "id":0,
+  //  "sector":"Audit/Professional Services",
+  //  "position": [51.5742802,-3.0493215], 
+  //  "address":"",
+ //    "company": "Office for National Statistics"
+  // },
+  // {
+  //  "id":0,
+  //  "sector":"Audit/Professional Services",
+  //  "position": [50.8396137,-1.2824668], 
+  //  "address":"",
+ //    "company": "Office for National Statistics"
+  // },
+  {
+    "id":0,
+    "sector":"Audit/Professional Services",
+    "position": [51.5154315,-0.0802103], 
+    "address":"133 Houndsditch, London, EC3A 7BX",
+    "company": "IHS Markit"
+  },
+  {
+    "id":100,
+    "sector":"Audit/Professional Services",
+    "position": [51.5059345,-0.0870698], 
+    "address":"Cottons Centre, SE1 2QG",
+    "company": "Control Risks"
+  },
+  {
+    "id":0,
+    "sector":"Audit/Professional Services",
+    "position": [51.5175084,-0.1358739], 
+    "address":"19-22 Rathbone Place, W1T 1HY",
+    "company": "MoneySavingExpert"
+  },
+  {
+    "id":0,
+    "sector":"Media",
+    "position": [50.7875431,-1.1262397], 
+    "address":"Haslar Road, Gosport PO12 2AG",
+    "company": "Blackball Media"
+  },
+  {
+    "id":0,
+    "sector":"Media",
+    "position": [51.5051764,-0.0895924], 
+    "address":"1 London Bridge Street, London, SE1 9GF",
+    "company": "The Wall Street Journal"
+  },
+  {
+    "id":0,
+    "sector":"Media",
+    "position": [51.5159935,-0.089481], 
+    "address":"12 Throgmorton Avenue, EC2N 2DL",
+    "company": "BlackRock"
+  },
+  {
+    "id":706,
+    "sector":"Media",
+    "position": [51.5051764,-0.0895924], 
+    "address":"1 London Bridge Street, SE1 9GF",
+    "company": "News UK Studio"
+  },
+  {
+    "id":888,
+    "sector":"Media",
+    "position": [51.4946546,-0.1474471], 
+    "address":"111 Buckingham Palace Road, SW1W 0DT",
+    "company": "The Telegraph Media Group"
+  },
+  {
+    "id":889,
+    "sector":"Media",
+    "position": [37.7948405,-122.4057099], 
+    "address":"601 Montgomery Street, San Francisco #1830",
+    "company": "Financial Times"
+  },
+  {
+    "id":889,
+    "sector":"Media",
+    "position": [38.9033568,-77.0364146], 
+    "address":"1023 15th Street, 7th Floor, Washington DC 20005",
+    "company": "Financial Times"
+  },
+  {
+    "id":272,
+    "sector":"Media",
+    "position": [51.4952465,-0.1437219], 
+    "address":"292 Vauxhall Bridge Road, London, SW1V 1AE",
+    "company": "Press Association"
+  },
+  {
+    "id":0,
+    "sector":"Media",
+    "position": [51.4959165,-0.2328767], 
+    "address":"The Aircraft Factory, London, W6 0LE",
+    "company": "Oddschecker"
+  },
+  {
+    "id":0,
+    "sector":"Media",
+    "position": [38.6562222,-122.8459851], 
+    "address":"1474 Alexander Valley Road, Healdsburg, CA 95448",
+    "company": "Jordan Winery"
+  },
+  {
+    "id":0,
+    "sector":"Media",
+    "position": [51.5240854,-0.1026731], 
+    "address":"10A Northburgh St, London, EC1V 0AT",
+    "company": "Markettiers"
+  },
+  {
+    "id":0,
+    "sector":"Weather",
+    "position": [50.7265528,-3.47577], 
+    "address":"FitzRoy Road, Exeter, Devon, EX1 3PB",
+    "company": "Met Office"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5170268,-0.0965886], 
+    "address":"88 Wood Street, London, EC2V 7QQ",
+    "company": "National Australia Bank"
+  },
+  {
+    "id":712,
+    "sector":"Finance",
+    "position": [51.5265227,-0.0621432], 
+    "address":"1 Angel Lane, London, EC4R 3AB",
+    "company": "Nomura London"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5141251,-0.0883936], 
+    "address":"One Threadneedle Street | London | EC2R 8AW",
+    "company": "Nationwide"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5402526,-1.779361],  
+    "address":"Nationwide House, Pipers Way, Swindon, SN38 1NW",
+    "company": "Nationwide"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5152935,-0.0862792],  
+    "address":"Tower 42, Floor 9a, 25 Old Broad St, London, EC2N 1HQ",
+    "company": "Oanda"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.4968267,-0.1459745],  
+    "address":"160 Victoria Street, Westminster, London SW1E 5LB",
+    "company": "Thomas Lloyd"
+  },
+  // {
+  //  "id":0,
+  //  "sector":"Finance",
+  //  "position": [51.528308,-0.3817765],  
+  //  "address":"",
+ //    "company": "UBS"
+  // },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5108159,-0.0967924],  
+    "address":"Thames Court, 1 Queenhithe, London, EC4V 3RL",
+    "company": "Rabobank International"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [24.3870789,54.4185365],  
+    "address":"8th Floor, P.O. Box 93894",
+    "company": "ADS Securities LLC"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [25.2126474,55.2802163],  
+    "address":"Unit 05, Level 1, Currency Tower 2, Dubai International Financial Centre, 507299",
+    "company": "Axicorp"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5154315,-0.0802103],  
+    "address":"133 Houndsditch, London, EC3A 7BX",
+    "company": "CMC Markets"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5130682,-0.0975113],  
+    "address":"25 Cannon Street, London, EC4M 5TA",
+    "company": "Fidelity"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5194169,-0.0853003],  
+    "address":"5 Broadgate, LondonEC2M 2QS",
+    "company": "UBS"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5191873,-0.1587195],  
+    "address":"55 Baker Street, London, W1U 7EU",
+    "company": "Axicorp"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [-33.8401671,151.2072814],  
+    "address":"Level 10, 90 Arthur St, North Sydney, NSW 2060",
+    "company": "Axicorp"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [46.2029906,6.1414866],  
+    "address":"Rue de la Corraterie 11, 1204 Geneva, Switzerland",
+    "company": "Banque Lombard"
+  },
+  {
+    "id":56,
+    "sector":"Finance",
+    "position": [51.5058019,-0.0236792],  
+    "address":"5 North Colonnade, E14 4BB",
+    "company": "Barclays"
+  },
+  {
+    "id":56,
+    "sector":"Finance",
+    "position": [51.5052645,-0.0164425],  
+    "address":"1 Churchill Place, E14 5HP",
+    "company": "Barclays Bank Plc"
+  },
+    {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5160773,-0.1021817],  
+    "address":"2 King Edward Street, EC1A 1HQ",
+    "company": "Bank of America Merrill Lynch"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [34.6900467,33.0064701],  
+    "address":"FXTM Tower, Lamprou Konstantara 35, Kato Polemidia 4156, Cyprus",
+    "company": "Forextime"
+  },
+  {
+    "id":86,
+    "sector":"Finance",
+    "position": [50.1117034,8.6703113],  
+    "address":"Garden Tower, Neue Mainzer Straße 46-50, 60311",
+    "company": "CMC Markets"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [48.890508,2.244398],  
+    "address":"14, place des Reflets, Paris La Défense Cedex, 92054",
+    "company": "Euronext"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [32.7875112,-96.7997582],  
+    "address":"2100 Ross Avenue, Suite 700, Dallas, TX 75201",
+    "company": "Allianz Insurance"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5154816,-0.0911074],  
+    "address":"8-10 Moorgate, EC2R 6DA",
+    "company": "ING Commercial Banking"
+  },
+  {
+    "id":31,
+    "sector":"Finance",
+    "position": [51.5142494,-0.0837613],  
+    "address":"St Helens, 1 Undershaft, EC3P 3DQ",
+    "company": "AVIVA"
+  },
+  {
+    "id":202,
+    "sector":"Finance",
+    "position": [51.5191905,-0.0861584],  
+    "address":"One Broadgate, EC2M 2QS",
+    "company": "ETX Capital"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5202381,-0.0814962],  
+    "address":"199 Bishopsgate, London, EC2M 3TY",
+    "company": "Allianz Insurance"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [37.7884883,-122.400643],  
+    "address":"555 Mission Street, San Francisco, CA 94105",
+    "company": "Allianz Insurance"
+  },
+  // {
+  //  "id":0,
+  //  "sector":"Finance",
+  //  "position": [49.8148347,5.5729043],  
+  //  "address":"",
+ //    "company": "European Investment Bank"
+  // },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [47.370828,8.5348843],  
+    "address":"Talacker 24, 8001",
+    "company": "UBS Wealth Management"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [47.3640137,8.5170174],  
+    "address":"Austrasse 46, 8045 Zürich, Switzerland",
+    "company": "Zurich Insurance"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [47.3484357,8.5616624],  
+    "address":"Seefeldstrasse 281, 8008 Zürich, Switzerland",
+    "company": "Lakefield"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [55.9530083,-3.194794],  
+    "address":"40 Princes Street, Edinburgh, EH2 2BY",
+    "company": "Aberdeen Standard Investment"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5134125,-0.0967581],  
+    "address":"1 Bread Street, EC4M 9HH",
+    "company": "Aberdeen Standard Investment"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5056266,-0.0973607],  
+    "address":" 49 Southwark Bridge Rd, London, SE1 9HH",
+    "company": "AJ Bell"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5160502,-0.0985129],  
+    "address":"2 Gresham Street, London, EC2V 7QP",
+    "company": "Investec Bank"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5104015,-0.0961006],  
+    "address":"Vintners Place, EC4V 3BJ",
+    "company": "Jefferies International"
+  },
+  {
+    "id":545,
+    "sector":"Finance",
+    "position": [51.5126808,-0.0844106],  
+    "address":"One Lime Street, EC3M 7HA",
+    "company": "Lloyds of London"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [34.6869904,33.0498593],  
+    "address":"Arch. Makariou III, 205, Victory House, 5th floor, 3030, Limassol, Cyprus ",
+    "company": "London Capital Group"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [54.9712716,-1.6002143],  
+    "address":"Quayside House, Newcastle upon Tyne, NE1 3DX",
+    "company": "Pantheon Macroeconomics"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [40.7545829,-73.9767742],  
+    "address":"245 Park Ave, New York, NY 10167, USA",
+    "company": "Rabobank"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5106117,-0.0967079],  
+    "address":"Thames Court, One Queenhithe, London, EC4V 4DQ",
+    "company": "RBC Capital Markets"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [53.797644,-1.5501645],  
+    "address":"9 Bond Court, Leeds, LS1 2JZ",
+    "company": "Redmayne Bentley"
+  },
+  {
+    "id":796,
+    "sector":"Finance",
+    "position": [51.5159907,-0.097158],  
+    "address":"31 Gresham Street, EC2V 7QA",
+    "company": "Schroders"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5152882,-0.0849254],  
+    "address":"3rd Floor, 55 Bishopsgate, London EC2N 3AS",
+    "company": "Seven Investment"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.8128986,-0.8288351],  
+    "address":"Oxford House, HP21 8SZ",
+    "company": "The Share Centre"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5052161,-0.0162209],  
+    "address":"1 Churchill Place, E14 5RD",
+    "company": "BGC Partners"
+  },
+  // {
+  //  "id":0,
+  //  "sector":"Finance",
+  //  "position": [51.528308,-0.3817765],  
+  //  "address":"",
+ //    "company": "Blackrock"
+  // },
+  {
+    "id":82,
+    "sector":"Finance",
+    "position": [51.5230284,-0.1660936],  
+    "address":"10 Harewood Avenue, NW1 6AA",
+    "company": "BNP Paribas"
+  },
+  {
+    "id":86,
+    "sector":"Finance",
+    "position": [51.5154315,-0.0802103],  
+    "address":"133 Houndsditch, London, EC3A 7BX",
+    "company": "CMC Markets"
+  },
+  {
+    "id":89,
+    "sector":"Finance",
+    "position": [51.5147278,-0.0952934],  
+    "address":"30 Gresham Street, EC3V 0HR",
+    "company": "Commerzbank"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    
+    "position": [51.5208484,-0.0854092],  
+    "address":"30 Crown Place, 9th Floor, London, EC2A 4ES",
+    "company": "Core Spreads"
+  },
+  {
+    "id":106,
+    "sector":"Finance",
+    "position": [51.516268,-0.0868541],  
+    "address":"1 Great Winchester Street, EC2N 2DB",
+    "company": "Deutsche Banks"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5130062,-0.090978351],  
+    "address":"3 Lombard Street, London, EC3V 9AA",
+    "company": "Wisdom Tree"
+  },
+  // {
+  //  "id":0,
+  //  "sector":"Finance",
+  //  "position": [51.528308,-0.3817765],  
+  //  "address":"",
+ //    "company": "ETX"
+  // },
+  {
+    "id":269,
+    "sector":"Finance",
+    "position": [51.4502851,-2.6049262],  
+    "address":"One College Square South, Anchor Road, Bristol, BS1 5HL",
+    "company": "Hargreaves Lansdown"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [22.2767954,114.1628923],  
+    "address":"Fidelity Investor Centre, Level 21, Two Pacific Place, 88 Queensway, Admiralty",
+    "company": "Fidelity"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.504832,-0.0184535],  
+    "address":"30 North Colonnade, Canary Wharf, London, E14 5GN",
+    "company": "Fitch Ratings"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.4987487,-0.142015],  
+    "address":"Hantec House, 12-14 Wilfred Street, SW1E 6PL",
+    "company": "Hantec Markets Limited"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5210804,-0.0815285],  
+    "address":"201 Bishopsgate, London, EC2M 3AE",
+    "company": "Henderson Global Investors"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5150113,-0.0989837],  
+    "address":"150 Cheapside, London, EC2V 6ET",
+    "company": "Hermes Investment Management"
+  },
+  {
+    "id":298,
+    "sector":"Finance",
+    "position": [51.5056472,-0.0206975],  
+    "address":"8 Canada Square, Canary Wharf, London, E14 5HQ",
+    "company": "HSBC Plc"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5209448,-0.0821328],  
+    "address":"Level 1 Broadgate Tower, 20 Primrose Street, London, EC2A 2EW",
+    "company": "Markets.com"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5038512,-0.0183939],  
+    "address":"20 Canada Square, Canary Wharf, London, E14 5LH",
+    "company": "McGraw Hill Financial"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5152417,-0.1046722],  
+    "address":"Mizuho House, 30 Old Bailey, London, EC4M 7AU",
+    "company": "Mizuho International"
+  },
+  {
+    "id":700,
+    "sector":"Finance",
+    "position": [51.5030138,-0.0242108],  
+    "address":"20 Bank Street, Canary Wharf, London, E14 4QA",
+    "company": "Morgan Stanley"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [51.5144672,-0.0895691],  
+    "address":"1 Bartholomew Lane, London, EC2N 2AX",
+    "company": "Monex"
+  },
+  {
+    "id":68,
+    "sector":"Finance",
+    "position": [51.5142419,-0.0888569],  
+    "address":"60 Threadneedle Street, EC2R 8HP",
+    "company": "Berenberg Bank"
+  },
+  {
+    "id":0,
+    "sector":"Finance",
+    "position": [40.760051,-73.9839362],  
+    "address":"1251 Avenue of the Americas, 53rd Floor, New York, NY 10020 ",
+    "company": "Berenberg Bank"
+  },
+  {
+    "id":0,
+    "sector":"Energy",
+    "position": [51.485636,-0.6417397],  
+    "address":"51.485636,-0.6417397",
+    "company": "Centrica"
+  },
+  {
+    "id":0,
+    "sector":"Energy",
+    "position": [51.5044829,-0.0203525],  
+    "address":"Level 32, 25 Canada Square, Canary Wharf, London, E14 5LQ",
+    "company": "Energy Aspects"
+  },
+  {
+    "id":0,
+    "sector":"Energy",
+    "position": [40.7129987,-74.0153496],  
+    "address":"Level 47, One World Trade Cente, 285 Fulton St Ste 47D, New York, NY 10007",
+    "company": "Energy Aspects"
+  },
+  {
+    "id":0,
+    "sector":"Material Technology",
+    "position": [50.8136878,4.3765558],  
+    "address":"Avenue Franklin Roosevelt 42, 1050 Bruxelles, Belgium",
+    "company": "Solvay"
+  },
+  {
+    "id":0,
+    "sector":"Scientific Research",
+    "position": [46.5148907,6.6090407],  
+    "address":"Avenue de Rhodanie 50, 1007 Lausanne, Switzerland",
+    "company": "Philip Morris International"
+  }
+
+]
+
+}
