@@ -5,7 +5,7 @@
   "author": "Austin Green",
   "dependencies": {
     "aws-sdk": "^2.454.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bulma": "^0.7.0",
     "elasticsearch": "^15.3.1",
     "esri-leaflet-geocoder": "^2.2.14",
