@@ -28,7 +28,7 @@
     "gatsby-source-filesystem": "^2.0.1",
     "gatsby-source-graphql": "^2.0.18",
     "gatsby-source-rss-feed": "^1.1.1",
-    "gatsby-transformer-remark": "^2.1.1",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^2.1.1",
     "leaflet": "^1.4.0",
     "leaflet-control-geocoder": "^1.6.0",
